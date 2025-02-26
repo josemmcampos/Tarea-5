@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tienda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 10px;
+        }
+        .seccion {
+            padding: 20px;
+        }
+        .productos {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .producto {
+            background: white;
+            padding: 10px;
+            border: 1px solid #000;
+            width: 100%;
+            max-width: 150px;
+            text-align: center;
+            color: black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .destacados {
+            background: #5d8484;
+            color: black;
+        }
+        .destacados h2 {
+            text-shadow: 0 0 3px white;
+        }
+        .ofertas {
+            background: #e8d18c;
+        }
+        .ofertas h2 {
+            text-shadow: 1px 1px 2px white, 0 0 30px #D46A6A;
+        }
+        .disponibles {
+            background: #e68c78;
+        }
+        .producto.destacado {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 0, 0.3);
+        }
+        .producto.oferta {
+            box-shadow: 4px 8px;
+        }
+        .producto.disponible {
+            box-shadow: 4px 8px #D46A6A;
+        }
+        .footer {
+            border-top: 1px solid black;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .productos {
+                flex-direction: column;
+                align-items: center;
+            }
+            .producto {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tu tienda</h1>
+    <div class="seccion destacados">
+        <h2>Productos destacados</h2>
+        <div class="productos">
+            <button class="producto destacado">Producto 1</button>
+            <button class="producto destacado">Producto 2</button>
+        </div>
+    </div>
+    <div class="seccion ofertas">
+        <h2>Ofertas</h2>
+        <div class="productos">
+            <button class="producto oferta">Producto 1</button>
+            <button class="producto oferta">Producto 2</button>
+            <button class="producto oferta">Producto 3</button>
+        </div>
+    </div>
+    <div class="seccion disponibles">
+        <h2>Disponible</h2>
+        <div class="productos">
+            <button class="producto disponible">Producto 1</button>
+            <button class="producto disponible">Producto 2</button>
+            <button class="producto disponible">Producto 3</button>
+            <button class="producto disponible">Producto 4</button>
+        </div>
+    </div>
+    <div class="footer">Derechos Reservados</div>
+</body>
+</html>
