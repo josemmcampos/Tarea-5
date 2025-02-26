@@ -60,6 +60,7 @@
         /* Estilos del contenido */
         .contenido {
             display: flex;
+            flex-direction: column;
             align-items: center;
             background-image: url('imagenes/imagen3.jpg');
             background-size: cover;
@@ -71,17 +72,30 @@
         }
 
         .contenido img {
-            width: 60px;
-            height: 40px;
+            width: 400px;
+            height: auto;
             border: 2px solid #605B56;
             margin: 3px;
             border-radius: 4px;
         }
 
-        .contenido p {
-            font-size: 0.9em;
+        .contenido .descripciones {
+            margin-top: 10px;
             text-align: left;
-            margin: 0;
+        }
+
+        .contenido ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .contenido li {
+            margin-bottom: 5px;
+        }
+
+        .contenido a {
+            text-decoration: none;
+            color: black;
         }
 
         /* Estilos del footer */
@@ -101,7 +115,7 @@
 <body>
 
     <header>
-        <img src="https://www.stanser.com/vectores/logo-mundo-ecologico/" alt="Logo Parque">
+        <img src="https://github.com/josemmcampos/Tarea-5/blob/main/Parque%20Ecol%C3%B3gico/logo.jpeg?raw=true" alt="Logo Parque">
         <h1>Parque ecológico</h1>
     </header>
 
@@ -112,15 +126,17 @@
     </nav>
 
     <section class="contenido">
-        <img src="imagenes/imagen2.jpg" alt="Imagen del parque">
-        <p>
-            Descripción de la foto del parque...<br>
-            Descripción de la foto del parque...<br>
-            Descripción de la foto del parque...<br>
-            Descripción de la foto del parque...<br>
-            Descripción de la foto del parque...<br>
-            Descripción de la foto del parque...
-        </p>
+        <img src="https://github.com/josemmcampos/Tarea-5/blob/main/Parque%20Ecol%C3%B3gico/6.jpg?raw=true" alt="Imagen del parque">
+        <div class="descripciones">
+            <ul>
+                <li><a href="https://github.com/josemmcampos/Tarea-5/blob/main/Parque%20Ecol%C3%B3gico/1.jpeg?raw=true" target="_blank">Descripción de la foto del parque...</a></li>
+                <li><a href="https://github.com/josemmcampos/Tarea-5/blob/main/Parque%20Ecol%C3%B3gico/2.jpg?raw=true" target="_blank">Hermosa vista de dos cascadas...</a></li>
+                <li><a href="https://github.com/josemmcampos/Tarea-5/blob/main/Parque%20Ecol%C3%B3gico/3.png?raw=true" target="_blank">Cascada dentro de la selva...</a></li>
+                <li><a href="https://github.com/josemmcampos/Tarea-5/blob/main/Parque%20Ecol%C3%B3gico/4.jpeg?raw=true" target="_blank">Balneario con hoteles...</a></li>
+                <li><a href="https://github.com/josemmcampos/Tarea-5/blob/main/Parque%20Ecol%C3%B3gico/5.jpeg?raw=true" target="_blank">Sendero...</a></li>
+                <li><a href="https://github.com/josemmcampos/Tarea-5/blob/main/Parque%20Ecol%C3%B3gico/6.jpg?raw=true" target="_blank">Parque Ecológico...</a></li>
+            </ul>
+        </div>
     </section>
 
     <hr>
